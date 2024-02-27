@@ -1,0 +1,5 @@
+# templ generated files
+views/**/*_templ.go
+
+# macOS-specific files
+.DS_Store

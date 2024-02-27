@@ -1,0 +1,18 @@
+package pages
+
+import (
+  "github.com/slingercode/go-echo-templ-plus-whatever/views/components"
+  "github.com/slingercode/go-echo-templ-plus-whatever/views/layouts"
+)
+
+templ Index(name string) {
+  @layouts.BaseLayout() {
+    <main>
+      @components.Greeting(name)
+
+      <div>
+        <p>Made with echo and templ</p>
+      </div>
+    </main>
+  }
+}
