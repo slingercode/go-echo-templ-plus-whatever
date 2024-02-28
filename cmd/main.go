@@ -12,6 +12,7 @@ func main() {
 
   // Routes
   app.GET("/", handlers.HandleIndex)
+  app.POST("/api/vote", handlers.HandleVote)
 
   app.Logger.Fatal(app.Start(":3000"))
 }
