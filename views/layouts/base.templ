@@ -6,14 +6,16 @@ templ BaseLayout() {
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width" />
-      <meta name="description" content="Golang application powered by echo, templ" />
+      <meta name="description" content="Golang application powered by echo, templ and more" />
 
       <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
+      <link rel="stylesheet" href="/static/global.css" />
 
       <title>Templ is FUN!</title>
     </head>
 
-    <body>
+    <body class="bg-red-300 p-10">
       { children... }
     </body>
   </html>

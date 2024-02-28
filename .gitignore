@@ -1,3 +1,8 @@
+node_modules
+
+# tailwind generated file
+static/global.css
+
 # templ generated files
 views/**/*_templ.go
 
