@@ -1,18 +1,18 @@
 package main
 
 import (
-	"github.com/labstack/echo/v4"
-	"github.com/slingercode/go-echo-templ-plus-whatever/handlers"
+	"context"
+	"fmt"
+	"os"
+
+	"github.com/slingercode/go-http/internal"
 )
 
 func main() {
-  app := echo.New()
+	ctx := context.Background()
 
-  app.Static("/static", "static")
-
-  // Routes
-  app.GET("/", handlers.HandleIndex)
-  app.POST("/api/vote", handlers.HandleVote)
-
-  app.Logger.Fatal(app.Start(":3000"))
+	if err := internal.Run(ctx, os.Stderr); err != nil {
+		fmt.Fprintf(os.Stderr, "%s\n", err)
+		os.Exit(1)
+	}
 }

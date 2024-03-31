@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "build": "tailwindcss build -i ./views/base.css -o ./static/global.css -m"
+    "build": "tailwindcss build -i ./internal/web/base.css -o ./internal/web/static/global.css -m"
   },
   "dependencies": {
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.3"
   }
 }

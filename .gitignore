@@ -1,10 +1,10 @@
-node_modules
+/node_modules
 
 # tailwind generated file
-static/global.css
+/internal/web/static/global.css
 
 # templ generated files
-views/**/*_templ.go
+/internal/web/**/*_templ.go
 
 # macOS-specific files
 .DS_Store

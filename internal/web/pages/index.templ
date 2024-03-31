@@ -1,0 +1,23 @@
+package pages
+
+import "github.com/slingercode/go-http/internal/web/layouts"
+
+templ IndexPage(stack []string) {
+  @layouts.BaseLayout() {
+    <main class="flex h-screen justify-center items-center">
+      <div class="flex flex-col items-center">
+        <p class="text-xl pb-5">Made with ♥️</p>
+
+        <p class="text-sm max-w-md pb-2">
+          and...
+        </p>
+
+        <p class="text-sm max-w-md lg:max-w-lg">
+          for _, item := range(stack) {
+            {item}, and...&nbsp;
+          }
+        </p>
+      </div>
+    </main>
+  }
+}
